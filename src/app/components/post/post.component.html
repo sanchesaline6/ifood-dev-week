@@ -12,6 +12,7 @@
       <textarea
         [(ngModel)]="tweetMessage"
         (input)="characterCounterTweet()"
+        (keyup.enter)="sendTweet()"
         class="mb-2 bg-gray-200 focus:outline-none focus:shadow-outline focus:bg-gray-100 resize-none border-transparent rounded-lg py-2 px-4 block w-full appearance-none leading-normal font-light placeholder-gray-700"
         name=""
         id=""
